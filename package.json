@@ -1,0 +1,27 @@
+{
+  "name": "nodejs-mvc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsup --out-dir build",
+    "dev": "tsx watch src/index.ts",
+    "prepare": "husky install",
+    "lint": "eslint src --ext .ts --fix --report-unused-disable-directives --max-warnings 0"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "husky": "^8.0.0",
+    "tsup": "^8.0.1",
+    "tsx": "^4.7.0",
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "@commitlint/cli": "^18.4.4",
+    "@commitlint/config-conventional": "^18.4.4",
+    "@rocketseat/eslint-config": "^2.1.0",
+    "eslint": "^8.56.0"
+  }
+}
